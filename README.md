@@ -1,3 +1,9 @@
+# How to install via composer
+
+```
+composer require aecarlosae/simple-encryptor
+
+```
 # How to use
 
 ```
