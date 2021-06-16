@@ -57,7 +57,7 @@ class Encryptor {
      * @return Encryptor
      **/
     public static function getInstance(
-        $passphrase = '@#~^*¿}[!9/3_@#~^*¿}[!',
+        $passphrase,
         $cipher = 'AES-256-CBC',
         $options = OPENSSL_RAW_DATA,
         $hashAlgorithm = 'sha256'

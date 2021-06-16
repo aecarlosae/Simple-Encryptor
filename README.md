@@ -2,16 +2,16 @@
 
 ```
 composer require aecarlosae/simple-encryptor
-
 ```
 # How to use
 
 ```
 try {
-    $phrase = Aecarlosae\SimpleEncryptor\Encryptor::getInstance()->encrypt('Hello World');
-    echo Aecarlosae\SimpleEncryptor\Encryptor::getInstance()->decrypt($phrase);
+    $passphrase = "@#~^*¿}[!9/3_@#~^*¿}[!";
+    $encryptedData = Aecarlosae\SimpleEncryptor\Encryptor::getInstance($passphrase)->encrypt('Hello World');
+    
+    echo Aecarlosae\SimpleEncryptor\Encryptor::getInstance($passphrase)->decrypt($encryptedData);
 } catch (Exception $e) {
     echo $e->getMessage();
 }
-
 ```
